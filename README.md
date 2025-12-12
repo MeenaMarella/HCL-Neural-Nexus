@@ -197,7 +197,8 @@ python src/cleaning.py
 ## 3️⃣ dw_loader.py — Build & Populate the Data Warehouse
 
 This script creates a Star Schema and loads all data into MySQL.
-![WhatsApp Image 2025-12-12 at 18 14 04](https://github.com/user-attachments/assets/b3e5398c-bb51-447e-955e-731be091b0e8)
+![WhatsApp Image 2025-12-12 at 20 08 26](https://github.com/user-attachments/assets/1a6864c2-3147-4683-b459-9059c80ae885)
+
 
 
 ✔ Dimension Tables
