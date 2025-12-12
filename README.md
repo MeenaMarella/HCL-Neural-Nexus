@@ -283,50 +283,35 @@ final late_fee_amount
 
 Updates fact table for downstream reporting.
 
-Command
-python src/compute_late_fees.py
+## Queries
+A)<img width="811" height="292" alt="image" src="https://github.com/user-attachments/assets/61cd08b9-bf71-470f-bdcd-96d766a30a5a" />
+   result: ![WhatsApp Image 2025-12-12 at 19 01 48](https://github.com/user-attachments/assets/fc2ab80d-15ce-40a0-8c01-7cbf0ef1b8e5)
 
-## 6️⃣ queries.sql — Generate Reports (a → g)
+B)<img width="928" height="176" alt="image" src="https://github.com/user-attachments/assets/66e68dcc-bd28-4784-9e4d-299f0b90bc2d" />
+   result : ![WhatsApp Image 2025-12-12 at 19 01 59](https://github.com/user-attachments/assets/9c779c17-7387-4864-9872-6847dcafeb20)
+C)<img width="980" height="267" alt="image" src="https://github.com/user-attachments/assets/56b2b28b-5431-446c-97d5-ab9f8c430255" />
+   result: <img width="1246" height="222" alt="image" src="https://github.com/user-attachments/assets/1437d958-e6f2-4693-930c-2e1fc635c568" />
+D)<img width="932" height="302" alt="image" src="https://github.com/user-attachments/assets/70224f1a-678c-42d3-af48-07425cb92445" />
+   result: <img width="1280" height="220" alt="image" src="https://github.com/user-attachments/assets/1e599246-000f-4957-8b0f-0f147257b880" />
+E)<img width="840" height="374" alt="image" src="https://github.com/user-attachments/assets/347d4a29-e423-44e4-8679-71c5343126da" />
+   result: <img width="1280" height="502" alt="image" src="https://github.com/user-attachments/assets/0abe7f64-f7d6-4c27-92db-39904fabda9a" />
+F)<img width="586" height="258" alt="image" src="https://github.com/user-attachments/assets/16ab8584-4d06-4013-8396-346440bc3761" />
+   result: <img width="766" height="381" alt="image" src="https://github.com/user-attachments/assets/735a8735-c2fe-49e3-9b59-39ea4c4c28f4" />
+G)<img width="1085" height="298" alt="image" src="https://github.com/user-attachments/assets/624a8d22-1e6a-49af-b332-3217ade784c9" />
+   result: <img width="1280" height="387" alt="image" src="https://github.com/user-attachments/assets/26906aa2-8b5d-4773-bdb3-91cd144a6f33" />
 
-Produces business insights such as:
 
-Customers who changed marital status
 
-Policy changes over time
 
-Auto policy customers
 
-Total policy amounts by region
 
-East & West quarterly customers (year 2012)
 
-Full customer-policy-location mapping
 
-Output CSVs:
-reports/a.csv
-reports/b.csv
-...
-reports/g.csv
 
-Command
-bash run_queries.sh
 
-##🏁 Final Deliverables
 
-This project delivers:
 
-✔ Cleaned day-wise datasets
 
-✔ Master consolidated dataset
 
-✔ Fully cleaned standardized dataset
 
-✔ Star Schema Data Warehouse in MySQL
 
-✔ Late-fee business rule engine
-
-✔ Fact table with computed late fees
-
-✔ Automated analytical reporting
-
-✔ Hackathon-ready ETL pipeline# HCL-Neural-Nexus
