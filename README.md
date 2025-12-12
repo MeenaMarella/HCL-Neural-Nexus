@@ -1,4 +1,4 @@
-##🏦 Insurance Policy Data Engineering Pipeline
+## 🏦 Insurance Policy Data Engineering Pipeline
 
 A complete end-to-end ETL + Data Warehouse solution built for multi-region, multi-day insurance policy data.
 This project demonstrates real-world data engineering best practices including:
@@ -15,7 +15,7 @@ Business rule processing (late fees)
 
 Automated analytical reporting
 
-##📂 Project Architecture
+## 📂 Project Architecture
 
 Raw data arrives from 4 U.S. regions (East, West, South, Central) for day0, day1, and day2.
 
@@ -23,7 +23,7 @@ Instead of merging everything at once, this pipeline follows day-wise ingestion,
 
 This simulates how enterprise insurers load data into warehouses incrementally.
 
-##1️⃣ ingest.py — Raw Data Ingestion (Day-wise Merge Across Regions)
+## 1️⃣ ingest.py — Raw Data Ingestion (Day-wise Merge Across Regions)
 
 Each day has 4 regional CSVs:
 
@@ -64,7 +64,7 @@ This becomes the single source of truth for the cleaning phase.
 Command
 python src/ingest.py
 
-##2️⃣ cleaning.py — Deep Cleaning & Standardization (DD-MM-YYYY Format)
+## 2️⃣ cleaning.py — Deep Cleaning & Standardization (DD-MM-YYYY Format)
 
 This script performs full cleaning on the combined dataset (raw_combined.csv) to create a fully standardized dataset for DW loading.
 
@@ -194,7 +194,7 @@ reports/cleaning_summary.json
 Command
 python src/cleaning.py
 
-##3️⃣ dw_loader.py — Build & Populate the Data Warehouse
+## 3️⃣ dw_loader.py — Build & Populate the Data Warehouse
 
 This script creates a Star Schema and loads all data into MySQL.
 ![WhatsApp Image 2025-12-12 at 18 14 04](https://github.com/user-attachments/assets/b3e5398c-bb51-447e-955e-731be091b0e8)
@@ -237,7 +237,7 @@ Late Days
 Command
 python src/dw_loader.py
 
-##4️⃣ load_late_fee_rules.py — Load Excel Late-Fee Rules
+## 4️⃣ load_late_fee_rules.py — Load Excel Late-Fee Rules
 
 Imports:
 
@@ -264,7 +264,7 @@ Late-day slabs
 Command
 python src/load_late_fee_rules.py
 
-##5️⃣ compute_late_fees.py — Late Fee Calculation Engine
+## 5️⃣ compute_late_fees.py — Late Fee Calculation Engine
 
 This script computes late fees by joining:
 
@@ -286,7 +286,7 @@ Updates fact table for downstream reporting.
 Command
 python src/compute_late_fees.py
 
-##6️⃣ queries.sql — Generate Reports (a → g)
+## 6️⃣ queries.sql — Generate Reports (a → g)
 
 Produces business insights such as:
 
